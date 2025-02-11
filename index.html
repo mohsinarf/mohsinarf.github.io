@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <title>Mohsin Ali - Software Engineer</title>
     <style>
         :root {
             --primary-color: #2d3748;
             --secondary-color: #4a5568;
-            --accent-color: #4299e1;
+            --accent-color: #3182ce;
             --background-color: #f7fafc;
         }
 
@@ -27,13 +27,13 @@
 
         header {
             background-color: white;
-            padding: 2rem;
+            padding: 3rem 2rem;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -44,158 +44,221 @@
         }
 
         h2 {
-            font-size: 2rem;
-            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
             color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
         }
 
-        .intro {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 2rem auto;
-            display: block;
-            background-color: #e2e8f0;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .skill-tag {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        .contact {
-            text-align: center;
-            margin: 4rem 0;
-        }
-
-        .social-links {
+        .contact-info {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 1.5rem;
+            margin-top: 1rem;
         }
 
-        .social-links a {
-            color: var(--secondary-color);
+        .contact-info a {
+            color: var(--accent-color);
             text-decoration: none;
             transition: color 0.2s;
         }
 
-        .social-links a:hover {
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .company-name {
+            font-weight: bold;
             color: var(--accent-color);
         }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: white;
-            margin-top: 4rem;
+        .job-title {
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        .date-location {
+            text-align: right;
+            color: var(--secondary-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .publications a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .publications a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
             }
             
-            h1 {
-                font-size: 2rem;
+            .experience-header {
+                flex-direction: column;
+                gap: 0.5rem;
             }
             
-            h2 {
-                font-size: 1.5rem;
+            .date-location {
+                text-align: left;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Software Developer</p>
+        <h1>Mohsin Ali</h1>
+        <div class="contact-info">
+            <span>+82-10-2668-9401</span>
+            <a href="mailto:mohsinariv@gmail.com">mohsinariv@gmail.com</a>
+            <a href="https://www.linkedin.com/in/mohsinali-/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mohsinarf" target="_blank">GitHub</a>
+        </div>
     </header>
 
     <main class="container">
-        <section class="intro">
-            <img src="/api/placeholder/200/200" alt="Profile picture" class="profile-img">
-            <p>Hi! I'm a passionate software developer with expertise in web development and a love for creating elegant solutions to complex problems.</p>
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">SmartCast Inc.</div>
+                        <div class="job-title">Senior C++ Software Engineer</div>
+                    </div>
+                    <div class="date-location">
+                        <div>Jun. 2023 -- Present</div>
+                        <div>South Korea</div>
+                    </div>
+                </div>
+                <ul>
+                    <li>Led development of a Smart Kitchen Display(KDS) System, optimizing kitchen operations with real-time order display.</li>
+                    <li>Implemented a voice-activated order system with Whisper model.</li>
+                    <li>Seamlessly incorporated Figma designs into QML applications.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Topos Studio</div>
+                        <div class="job-title">C++ Software Engineer</div>
+                    </div>
+                    <div class="date-location">
+                        <div>Feb. 2022 -- Jun. 2023</div>
+                        <div>South Korea</div>
+                    </div>
+                </div>
+                <ul>
+                    <li>Developed Warping and Blending software in C++ and OpenGL for multi-projector displays.</li>
+                    <li>Implemented camera-based automatic calibration using OpenCV.</li>
+                    <li>Generated technical documentation for reference and reporting.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">BAUM Design Systems</div>
+                        <div class="job-title">Software Developer</div>
+                    </div>
+                    <div class="date-location">
+                        <div>Sep. 2020 -- Feb. 2022</div>
+                        <div>South Korea</div>
+                    </div>
+                </div>
+                <ul>
+                    <li>Developed C++ desktop applications for Linux environments.</li>
+                    <li>Implemented CI/CD workflows with GitHub Actions.</li>
+                    <li>Utilized various testing and profiling tools for optimization.</li>
+                </ul>
+            </div>
         </section>
 
         <section>
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of your first project. What technologies did you use? What problems did it solve?</p>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <p>C++, C, Python, SQL, Javascript, Bash Scripting</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of your second project. Highlight your role and the impact it made.</p>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <p>Qt, QML, OpenGL, PyTorch, Pandas, Numpy, OpenSSL, ImGui, OpenCV</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Details about another significant project. What were the challenges and how did you overcome them?</p>
+                <div class="skill-category">
+                    <h3>Testing & Profiling</h3>
+                    <p>GTest, Google Benchmark, GDB, Clang-tidy, Valgrind, Clang-format</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <p>CMake, Git, Jira, UML, BitBucket, Doxygen, AWS Services (EC2, Lambdas, RDS, S3)</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">SQL</span>
+            <h2>Education</h2>
+            <div class="experience-item">
+                <div>Masters of Science in Aerospace Engineering</div>
+                <div class="job-title">CGPA: 3.55/4.3</div>
+            </div>
+            <div class="experience-item">
+                <div>Bachelor of Science in Mechatronics Engineering</div>
+                <div class="job-title">CGPA: 3.56/4.0</div>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <p>I'm always interested in new opportunities and collaborations.</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
+        <section>
+            <h2>Technical Publications</h2>
+            <div class="publications">
+                <div class="experience-item">
+                    <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S026322412100138X" target="_blank">Robotic and Laser Mirror Excitation for Inspection of Composite Structures</a> - Measurement [May. 2021]</p>
+                </div>
+                <div class="experience-item">
+                    <p><a href="https://koasas.kaist.ac.kr/handle/10203/269274" target="_blank">Algorithm to Remove Pincushion Distortions in the Laser Mirror Scanner</a> - KSNT Conference [Oct. 2019]</p>
+                </div>
+                <div class="experience-item">
+                    <p><a href="https://journals.sagepub.com/doi/10.1177/0954410018789313" target="_blank">Flight Dynamics and Parametric Modelling of 2DOF Lab Aircraft</a> - IMechE Journal [Jul. 2018]</p>
+                </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
